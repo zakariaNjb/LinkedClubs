@@ -1,0 +1,162 @@
+
+body {
+  margin: 0;
+  font-size: 20px;
+  background-color: #F1F1F1;
+}
+
+#posts__reminder {
+  position: relative;
+  top: 100px;
+  padding: 0 5px;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+#posts {
+  flex-grow: 0.68;
+  max-width: 100%;
+}
+#posts .post {
+  width: 100%;
+  background-color: snow;
+  border-style: groove;
+  border-width: 0.5px;
+  padding: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-color: rgba(128, 128, 128, 0.13);
+}
+#posts .post header {
+  display: flex;
+  justify-content: space-between;
+}
+#posts .post header div {
+  display: flex;
+  align-items: center;
+}
+#posts .post header div img {
+  width: 2em;
+  height: 2em;
+  border-radius: 100px;
+}
+#posts .post header div span li:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+#posts .post header div li {
+  padding: 2px 5px;
+  list-style: none;
+  font-size: 0.7em;
+}
+#posts .post header div button {
+  padding: 15px 0px;
+  padding-right: 10px;
+  width: 120px;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.7em;
+}
+#posts .post header div button:hover {
+  color: #FF7556;
+}
+#posts .post p {
+  width: 100%;
+  margin: 10px 0px;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 0.9em;
+}
+#posts .post img {
+  width: 100%;
+  margin: 10px 0px;
+}
+#posts .post header.likes__comments {
+  border-style: groove;
+  border-width: 0;
+  border-top-width: 0.5px;
+}
+#posts .post header.likes__comments div:nth-of-type(1) {
+  width: 70%;
+}
+#posts .post section.comments {
+  padding-top: 10px;
+  border-style: groove;
+  border-width: 0;
+  border-top-width: 0.5px;
+  display: none;
+}
+#posts .post section.comments main {
+  max-height: 200px;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#posts .post section.comments main::-webkit-scrollbar {
+  display: none;
+}
+#posts .post section.comments div {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  box-sizing: border-box;
+  width: 50%;
+}
+#posts .post section.comments div img {
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 100px;
+}
+#posts .post section.comments div span {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 0.7em;
+}
+#posts .post section.comments form {
+  display: flex;
+  width: 100%;
+  padding: 10px 0px;
+}
+#posts .post section.comments form input {
+  width: 60%;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+#posts .post section.comments form button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #FF7556;
+}
+@media screen and (max-width: 860px) {
+	 #posts__reminder {
+    width: 80%;
+    padding: 0px 10px;
+  }
+  #posts {
+    flex-grow: 1px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+   #posts__reminder {
+    top: 120px;
+    width: 100%;
+  }
+  }

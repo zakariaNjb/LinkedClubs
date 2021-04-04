@@ -1,0 +1,100 @@
+#navBar {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  background-color: #313131;
+  box-shadow: 5px 5px 20px black;
+}
+#navBar main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+#navBar main a {
+  text-decoration: none;
+  color: snow;
+  cursor: pointer;
+}
+#navBar main i {
+  font-size: 1.5em;
+}
+#navBar main button {
+  cursor: pointer;
+  padding: 0px 10px;
+  color: snow;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+#navBar main div button:nth-of-type(1){
+	display:none;
+}
+#navBar main button input {
+  background-color: transparent;
+  outline: none;
+  color: snow;
+  border-style: groove;
+  border-width: 0;
+  border-color: snow;
+  border-bottom-width: 0.5px;
+  padding: 5px;
+  font-size: 1.1em;
+}
+#navBar main div {
+  display: flex;
+  align-items: center;
+}
+#navBar main div img {
+  width: 2em;
+  height: 2em;
+  padding: 10px;
+  border-radius: 100px;
+}
+#navBar main div span {
+  color: snow;
+}
+
+#nbrReminder{
+	display:none;
+}
+/******Media queries*********/
+@media screen and (max-width: 860px) {
+  #navBar main {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 751px) {
+  #fullName {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  #nbrReminder{
+	display:block;
+}
+	#navBar main div button:nth-of-type(1){
+	display:block;
+}
+  #navBar main {
+    padding: 10px;
+    width: 100%;
+  }
+
+  #navBar main input {
+    width: 100px;
+  }
+
+  #navBar main img {
+    display: none;
+  }
+}
